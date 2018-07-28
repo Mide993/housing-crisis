@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite: 400");
+.btn {
+  white-space: normal;
+  line-height: .2;
+  display: block;
+  margin: auto; }
+
+.center-block {
+  line-height: 1.1rem; }
+
+.badge {
+  position: absolute;
+  top: 50%;
+  left: 90%; }
+
+form {
+  padding-left: 2rem;
+  padding-right: 4rem; }
+
+.chart-icons {
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  opacity: 0.5; }
+
+.fa-key {
+  color: #306E12; }
+
+.fa-users {
+  color: #B46810; }
+
+.fa-exclamation-triangle {
+  color: #801F15; }
+
+.fa-home {
+  color: #143153; }
+
+.social-media {
+  color: #fff; }
+
+.card-title {
+  color: #801F15; }
+
+.dc-chart g.row text {
+  font-size: 1.5rem; }
+
+.dc-chart .pie-slice {
+  font-size: 1.5rem; }
+
+#landing-alert {
+  font-size: 4rem;
+  font-weight: 200;
+  font-family: "Cabin Sketch";
+  color: #000;
+  box-shadow: 12px 10px 9px #525050;
+  width: 90%;
+  font-size: 2.8rem;
+  position: fixed;
+  top: 20%;
+  z-index: 10; }
+
+ol {
+  padding-left: 4rem; }
+
+.shadow {
+  box-shadow: 3px 6px 12px black !important; }
+
+img {
+  height: 7rem;
+  opacity: 0.5;
+  display: block;
+  margin: auto; }
+
+.header-margin {
+  margin-top: 0.5rem; }
+
+p {
+  font-family: "Special Elite";
+  font-size: 1rem;
+  font-weight: 200;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  color: black;
+  text-align: justify; }
+
+footer {
+  text-align: center; }
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Cabin Sketch"; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem; } }
+
+h3 {
+  font-family: "Neucha";
+  font-weight: 600;
+  padding-left: 2rem; }
+
+h4 {
+  font-family: "Neucha";
+  font-weight: 400; }
+
+.chart-heading-1 {
+  border-left: black solid .2rem;
+  padding-left: .5rem;
+  padding-top: .5rem; }
+
+.chart-heading-2 {
+  border-left: black solid .2rem;
+  padding-left: .5rem;
+  padding-top: .5rem; }
+
+.chart-heading-3 {
+  border-left: black solid .2rem;
+  padding-left: .5rem;
+  padding-top: .5rem; }
+
+.chart-heading-4 {
+  border-left: black solid .2rem;
+  padding-left: .5rem;
+  padding-top: .5rem; }
+
+h5 {
+  text-align: left; }
+
+body {
+  background-image: url("images/nlMural.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.container-fluid {
+  padding-top: .5rem;
+  padding-left: 3rem; }
+
+#main-content {
+  margin-top: 1.5rem;
+  text-align: left;
+  padding: 0 auto;
+  max-height: 720px; }
+
+#area_private {
+  padding-left: 2rem; }
+
+.highlight {
+  background-color: yellow; }
+
+a:hover {
+  text-decoration: none; }
+
+.social-media:hover {
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */

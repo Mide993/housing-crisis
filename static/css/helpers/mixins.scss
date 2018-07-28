@@ -1,0 +1,22 @@
+@mixin logo ($size) {
+    height: $size;
+    opacity: $opacity;
+    display: block;
+    margin: auto;
+}
+
+@mixin left-padding {
+    padding-left: 2rem;
+}
+
+@mixin page-headers-font {
+    font-family: "Cabin Sketch";
+}
+
+@mixin chart-headers-font {
+    font-family: "Neucha";
+}
+
+@mixin para-font {
+    font-family: "Special Elite";
+}

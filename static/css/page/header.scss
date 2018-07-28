@@ -1,0 +1,11 @@
+.shadow {
+    box-shadow: $shadow;
+}
+
+img {
+    @include logo (7rem);
+}
+
+.header-margin {
+    margin-top: $margin-top;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite: 400');
+@import "helpers/media_queries";
+
+
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "components/buttons";
+@import "components/emailjs";
+@import "page/charts";
+@import "page/landing_page";
+@import "page/header";
+@import "page/paragraphs";
+@import "page/footer";
+@import "page/fonts";
+
+
+// ******************************************************************Background
+body {
+    background: {
+    image: url("images/nlMural.jpg");
+    repeat: no-repeat;
+    size: cover;
+    position: center;
+    attachment: fixed;
+    }
+}
+
+.container-fluid {
+    padding: {
+        top: .5rem;
+        left: 3rem;
+    }
+
+}
+
+// *********************************************Margins, Padding, Heigh & Width
+#main-content {
+    margin-top: $margin;
+    text-align: left;
+    padding: 0 auto;
+    max-height: 720px;
+}
+
+
+// ****************************************************Paddings
+#area_private {
+    @include left-padding;
+}
+
+
+// ************************************************************Hover Effects
+.highlight {
+    background-color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.social-media:hover {
+    color: black;
+  
+}
+
+// ******************************************************************FOOTER

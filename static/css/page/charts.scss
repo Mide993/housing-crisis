@@ -1,0 +1,40 @@
+.chart-icons {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    opacity: $opacity;
+}
+
+.fa-key {
+    color: $green;
+}
+
+.fa-users {
+    color: $orange;
+}
+
+.fa-exclamation-triangle {
+    color: $red;
+}
+
+.fa-home {
+    color: $blue;
+}
+
+.social-media {
+    color: $white;
+}
+
+.card-title {
+    color: $red;
+}
+
+// NEED WORK!!
+.dc-chart g.row text {
+    font-size: $chartLabel;
+}
+
+
+.dc-chart .pie-slice {
+    font-size: $chartLabel;
+}

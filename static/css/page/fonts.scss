@@ -1,0 +1,52 @@
+h1 {
+    font: {
+        weight: 700;
+        size: 2rem;
+    }
+    text-align: center;
+    @include page-headers-font;
+    
+    @media (min-width: $tablet-width) {
+        font: {
+        size: 3rem;
+        }
+    }
+}
+
+
+h3 {
+    @include chart-headers-font;
+
+    font: {
+        weight: 600;
+    }
+    padding-left:2rem;
+}
+
+
+h4 {
+    @include chart-headers-font;
+
+    font: {
+        weight: 400;
+    }
+}
+
+$class-name: chart-heading;
+
+@for $i from 1 through 4 {
+    .#{$class-name}-#{$i} {
+        border: {
+            left: black solid .2rem;
+        }
+        padding: {
+            left: .5rem;
+            top: .5rem;
+        }
+    }
+}
+
+
+h5 {
+    text-align: left;
+}
