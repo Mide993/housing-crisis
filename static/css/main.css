@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700");
 @import url("https://fonts.googleapis.com/css?family=Special+Elite: 400");
-.btn {
+@import url("https://fonts.googleapis.com/css?family=Neucha: 600");
+.btn-nav {
   white-space: normal;
   line-height: .2;
   display: block;
@@ -15,12 +16,12 @@
   left: 90%; }
 
 form {
-  padding-right: 4rem; }
+  padding-right: 1rem; }
 
 .chart-icons {
   position: absolute;
   top: 60%;
-  left: 75%;
+  left: 80%;
   opacity: 0.5; }
 
 .fa-key {
@@ -46,6 +47,11 @@ form {
 
 .dc-chart .pie-slice {
   font-size: 1.5rem; }
+
+.pop-over {
+  position: absolute;
+  top: 70%;
+  left: 80%; }
 
 #landing-alert {
   font-size: 4rem;
@@ -99,27 +105,32 @@ h3 {
 
 h4 {
   font-family: "Neucha";
+  font-size: 1rem;
   font-weight: 400; }
 
 .chart-heading-1 {
   border-left: black solid .2rem;
   padding-left: .5rem;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  margin-top: 1.5rem; }
 
 .chart-heading-2 {
   border-left: black solid .2rem;
   padding-left: .5rem;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  margin-top: 1.5rem; }
 
 .chart-heading-3 {
   border-left: black solid .2rem;
   padding-left: .5rem;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  margin-top: 1.5rem; }
 
 .chart-heading-4 {
   border-left: black solid .2rem;
   padding-left: .5rem;
-  padding-top: .5rem; }
+  padding-top: .5rem;
+  margin-top: 1.5rem; }
 
 h5 {
   text-align: left; }
@@ -129,7 +140,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: "Neucha"; }
 
 .container-fluid {
   padding-top: .5rem; }

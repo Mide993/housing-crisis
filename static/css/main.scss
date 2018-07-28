@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite: 400');
+@import url('https://fonts.googleapis.com/css?family=Neucha: 600');
 @import "helpers/media_queries";
 
 
@@ -24,6 +25,7 @@ body {
         position: center;
         attachment: fixed;
     }
+    @include chart-headers-font;
 }
 
 .container-fluid {
