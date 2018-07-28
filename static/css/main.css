@@ -15,7 +15,6 @@
   left: 90%; }
 
 form {
-  padding-left: 2rem;
   padding-right: 4rem; }
 
 .chart-icons {
@@ -79,8 +78,6 @@ p {
   font-family: "Special Elite";
   font-size: 1rem;
   font-weight: 200;
-  padding-left: 2rem;
-  padding-right: 4rem;
   color: black;
   text-align: justify; }
 
@@ -98,8 +95,7 @@ h1 {
 
 h3 {
   font-family: "Neucha";
-  font-weight: 600;
-  padding-left: 2rem; }
+  font-weight: 600; }
 
 h4 {
   font-family: "Neucha";
@@ -129,24 +125,20 @@ h5 {
   text-align: left; }
 
 body {
-  background-image: url("images/nlMural.jpg");
+  background-image: url("/static/images/nlMural.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
 
 .container-fluid {
-  padding-top: .5rem;
-  padding-left: 3rem; }
+  padding-top: .5rem; }
 
 #main-content {
   margin-top: 1.5rem;
   text-align: left;
   padding: 0 auto;
   max-height: 720px; }
-
-#area_private {
-  padding-left: 2rem; }
 
 .highlight {
   background-color: yellow; }

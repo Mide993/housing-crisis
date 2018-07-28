@@ -4,11 +4,6 @@ p {
         size: 1rem;
         weight: 200;
     }
-
-    @include left-padding;
-    padding: {
-        right: 4rem;
-    }
     color: black;
     text-align: justify;
 }

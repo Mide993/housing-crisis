@@ -18,18 +18,17 @@
 // ******************************************************************Background
 body {
     background: {
-    image: url("images/nlMural.jpg");
-    repeat: no-repeat;
-    size: cover;
-    position: center;
-    attachment: fixed;
+        image: url("/static/images/nlMural.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+        attachment: fixed;
     }
 }
 
 .container-fluid {
     padding: {
         top: .5rem;
-        left: 3rem;
     }
 
 }
@@ -42,11 +41,6 @@ body {
     max-height: 720px;
 }
 
-
-// ****************************************************Paddings
-#area_private {
-    @include left-padding;
-}
 
 
 // ************************************************************Hover Effects
