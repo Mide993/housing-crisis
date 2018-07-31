@@ -11,9 +11,13 @@
   line-height: 1.1rem; }
 
 .badge {
-  position: absolute;
-  top: 50%;
-  left: 90%; }
+  display: block;
+  width: 33%;
+  margin: auto;
+  margin-top: 3rem; }
+
+i {
+  padding: 10px; }
 
 form {
   padding-right: 1rem; }
@@ -93,10 +97,8 @@ p {
   padding: 2rem;
   box-shadow: 3px 6px 12px black !important;
   margin-left: 2rem;
-  margin-right: 2rem; }
-
-footer {
-  text-align: center; }
+  margin-right: 2rem;
+  overflow: auto; }
 
 h1 {
   font-weight: 700;
@@ -152,6 +154,19 @@ h5 {
   font-size: 2rem;
   color: #dc3545;
   font-weight: 600; }
+
+.info-modal {
+  background: #155475;
+  padding: 2rem;
+  border-radius: 22px;
+  position: fixed;
+  display: none;
+  box-shadow: 3px 6px 12px black !important; }
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
 
 body {
   background-image: url("/static/images/nlMural.jpg");

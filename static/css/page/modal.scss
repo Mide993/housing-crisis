@@ -1,0 +1,14 @@
+.info-modal {
+    background: #155475;
+    padding: 2rem;
+    border-radius: 22px;
+    position: fixed;
+    display: none;
+    box-shadow: $shadow;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
