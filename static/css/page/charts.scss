@@ -1,8 +1,9 @@
 .chart-icons {
     position: absolute;
     top: 60%;
-    left: 75%;
+    left: 80%;
     opacity: $opacity;
+    text-shadow: $shadow;
 }
 
 .fa-key {
@@ -37,4 +38,10 @@
 
 .dc-chart .pie-slice {
     font-size: $chartLabel;
+}
+
+.pop-over {
+    position: absolute;
+    top: 70%;
+    left: 80%;
 }

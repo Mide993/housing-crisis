@@ -9,7 +9,8 @@
 
     <!--CSS-->
     <!--bootstrap-->
-	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+
     <!--CSS dc library -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" />
     <!--font awesome-->
@@ -35,21 +36,20 @@
     <!--Custom js-->
     <script type="text/javascript" src="js/charts.js"></script>
     <script type="text/javascript" src="js/private-landlord-rotation.js"></script>
-    
-    
+
+
     <!--emailjs-->
-	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function() {
-			emailjs.init("user_yKFJuhA6m83EpxYAknonr");
-		})();
-	</script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_yKFJuhA6m83EpxYAknonr");
+        })();
+    </script>
 </head>
 
 
 <body>
     <header>
-
         <div class="row header-margin">
             <div class="col-lg-2 d-none d-lg-block">
                 <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo2.png" class="logos" alt="PPR logo"></a>
@@ -65,29 +65,38 @@
             </div>
         </div>
     </header>
-
     <main class="container-fluid">
         <div class="row" id="main-content">
-
             <!--Left side column-->
-            <div class="col-lg-2">
-                <h3>Its about SUPPLY and DEMAND</h3>
-                <p>The need for additional social housing is figured out by looking at <span id="text_effect_demand">how many people need housing (demand)</span> and if <span id="text_effect_supply">current planned housing is capable of meeting that need (supply).</span><br><br>When
-                    there is not enough housing, <span id="text_effect_private_landlords">families end up homeless and the
-					poorly regulated private rented sector is relied on to meet need.</span></p>
+            <div class="col-lg-3 side-text-box">
 
-                <!--JS plug-in-->
-                <div id="area_private">
-                    <h3>Who's BENEFITTING?</h3>
-                    <div class="card bg-light mb-3 d-none d-lg-block" style="max-width: 18rem;">
-                        <div class="card-header">2015 Public Housing Benefit Paid to Private Landlords</div>
-                        <div class="card-body">
-                            <h1 class="card-title"><strong class="dissolve">£4.5m South Belfast, £5.1m East Belfast, £47.7m West Belfast, £47.8m North Belfast</strong></h1>
-                        </div>
+                <!--TEST-->
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active info-color" data-toggle="tab" href="#home">Supply & Demand</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link info-color" data-toggle="tab" href="#profile">Who benefits?</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade show active" id="home">
+                        <h3>Its about SUPPLY and DEMAND</h3>
+                        <p>The need for additional social housing is figured out by looking at <span id="text_effect_demand">how many people need housing (demand)</span> and if <span id="text_effect_supply">current planned housing is capable of meeting that need (supply).</span><br><br>When
+                        there is not enough housing, <span id="text_effect_private_landlords">families end up homeless and the
+    					poorly regulated private rented sector is relied on to meet need.</span></p>
+                    </div>
+                    <!--JS plug-in to show private landlord payments-->
+                    <div class="tab-pane fade" id="profile">
+                        <h3>Who's BENEFITTING?</h3>
+                        <p>2015 Public Housing Benefit Paid to Private Landlords</p>
+                        <p><strong class="dissolve">£4.5m South Belfast, £5.1m East Belfast, £47.7m West Belfast, £47.8m North Belfast</strong></p>
                     </div>
                 </div>
+                <hr>
+                <h3 class="info-color">Got information?</h3>
+                <button type="button" class="btn btn-danger"><strong>SHARE IT!</strong></button>
             </div>
-            
             <!--Middle section - charts-->
             <div class="col-lg-8 col-md-12">
                 <div class="row">
@@ -95,56 +104,69 @@
                     <div class="col-lg-6 col-md-6 chart_background">
                         <div id="severe_waiting_list">
                             <h4 class="chart-heading-1">DEMAND: Households in critical need (150+ pts)</h4>
-                            <i class="fas fa-exclamation-triangle fa-3x chart-icons" aria-hidden="true"></i>
-                            <button type="button" class="btn btn-secondary pop-over" title="" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover Title">Left</button>
-
+                            <i class="fas fa-exclamation-triangle fa-4x chart-icons" aria-hidden="true"></i>
                         </div>
                     </div>
                     <!--Housing stress pie chart-->
                     <div class="col-lg-6 col-md-6 chart_background">
                         <div id="area_waiting_list">
                             <h4 class="chart-heading-2">DEMAND: Households in 'stress' (+30 pts)</h4>
-                            <i class="fas fa-users fa-3x chart-icons" aria-hidden="true"></i>
+                            <i class="fas fa-users fa-4x chart-icons" aria-hidden="true"></i>
                         </div>
                     </div>
                     <!--Homes allocated row chart-->
                     <div class="col-lg-6 col-md-6 chart_background">
                         <div id="area_allocations">
                             <h4 class="chart-heading-3">SUPPLY: Homes allocated</h4>
-                            <i class="fas fa-key fa-3x chart-icons" aria-hidden="true"></i>
+                            <i class="fas fa-key fa-4x chart-icons" aria-hidden="true"></i>
                         </div>
                     </div>
                     <!--New homes built row chart-->
                     <div class="col-lg-6 col-md-6 chart_background">
                         <div id="builds_by_year">
-							<h4 class="chart-heading-4">SUPPLY: New homes built (2010-15)</h4>
-							<i class="fas fa-home fa-3x chart-icons"></i>
-						</div>                        
+                            <h4 class="chart-heading-4">SUPPLY: New homes built (2010-15)</h4>
+                            <i class="fas fa-home fa-4x chart-icons"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-			<!--Right side column-->
-			<div class="col-lg-2">
-				<div id="document_upload">
-					<h3>SHARE Your Information!</h3>
-					<p>These are mostly 2015 staistics.<br><br>In 2016 the Housing Executive stopped publishing their statistics on how many people need housing and how many homes they are providing.<br><br> They also deleted all previous statistics from their website
-						and the internet in general.<br><br><span id="text_effect_action">If you have any information (statistics, documents, photographs, etc) which could help to understand what the Housing Executive are at, or knowledge you would like to make public then please send a message below.</span></p>
+            <!--Right side column-->
+            <div class="col-lg-4">
+                <div class="center-form">
+                    <form onsubmit="return sendMail(this);" method="POST">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="info_query" class="form-control" id="info_query" placeholder="Any craic, information or ideas... We're all ears (and eyes)" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send & we'll be in touch!</button>
+                    </form>
+                </div>
+            </div>
 
-					<div class="center-form">
-						<form onsubmit="return sendMail(this);" method="POST">
-							<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-							<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-							<textarea rows="5" name="info_query" class="form-control" id="info_query" placeholder="Any craic, information or ideas... We're all ears (and eyes)" required></textarea>
-							<button type="submit" class="btn btn-secondary center-block">Send & we'll be in touch!</button>
-						</form>
-					</div>
-				</div>
-			</div>
-            
-            
+            <p>These are mostly 2015 staistics.<br><br>In 2016 the Housing Executive stopped publishing their statistics on how many people need housing and how many homes they are providing.<br><br> They also deleted all previous statistics from
+                their website and the internet in general.<br><br><span id="text_effect_action">If you have any information (statistics, documents, photographs, etc) which could help to understand what the Housing Executive are at, or knowledge you would like to make public then please send a message below.</span></p>
+
+
+
         </div>
     </main>
+    <!--  <footer>-->
+    <!--<div class="row">-->
+    <!--	<div class="col-xs-12">-->
+
+    <!--		<button class="btn btn-primary btn-lg btn-block">-->
+    <!--		<h5 id="area_action_foot">Since 2012, families have campaigned through Equality Can't Wait to end homelessness-->
+    <!--			& religious inequality in housing provision and progress housing rights for all.</h5>-->
+    <!--		</button>-->
+    <!--		<span class="badge badge-danger">Follow Us<br>-->
+    <!--		<a target="_blank" href="https://www.facebook.com/pprproject"><i class="fab fa-facebook-f fa-2x social-media"></i></a>-->
+    <!--		<a target="_blank" href="https://twitter.com/PPR_Org"><i class="fab fa-twitter fa-2x social-media"></i></a>-->
+    <!--		<a target="_blank" href="http://www.youtube.com/user/PPRProject?sub_confirmation=1"><i class="fab fa-youtube fa-2x social-media"></i></a></span>-->
+    <!--	</div>-->
+
+    <!--</div>-->
+    <!--</footer>-->
+    <!--<script src="js/send_email.js"></script>-->
+
 
 </body>
 

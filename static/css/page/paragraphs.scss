@@ -4,6 +4,14 @@ p {
         size: 1rem;
         weight: 200;
     }
-    color: black;
+    color: $white;
     text-align: justify;
+}
+
+.side-text-box {
+    background: #000000ad;
+    padding: 2rem;
+    box-shadow: $shadow;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }

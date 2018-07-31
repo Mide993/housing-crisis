@@ -16,6 +16,8 @@ h1 {
 
 h3 {
     @include chart-headers-font;
+    color: $white;
+    margin-top: 1rem;
 
     font: {
         weight: 600;
@@ -50,4 +52,13 @@ $class-name: chart-heading;
 
 h5 {
     text-align: left;
+}
+
+.info-color {
+    color: #17a2b8;
+}
+.dissolve {
+    font-size: 2rem;
+    color: rgb(220, 53, 69);
+    font-weight: 600;
 }

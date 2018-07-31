@@ -22,7 +22,8 @@ form {
   position: absolute;
   top: 60%;
   left: 80%;
-  opacity: 0.5; }
+  opacity: 0.5;
+  text-shadow: 3px 6px 12px black !important; }
 
 .fa-key {
   color: #306E12; }
@@ -84,8 +85,15 @@ p {
   font-family: "Special Elite";
   font-size: 1rem;
   font-weight: 200;
-  color: black;
+  color: #fff;
   text-align: justify; }
+
+.side-text-box {
+  background: #000000ad;
+  padding: 2rem;
+  box-shadow: 3px 6px 12px black !important;
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 footer {
   text-align: center; }
@@ -101,6 +109,8 @@ h1 {
 
 h3 {
   font-family: "Neucha";
+  color: #fff;
+  margin-top: 1rem;
   font-weight: 600; }
 
 h4 {
@@ -134,6 +144,14 @@ h4 {
 
 h5 {
   text-align: left; }
+
+.info-color {
+  color: #17a2b8; }
+
+.dissolve {
+  font-size: 2rem;
+  color: #dc3545;
+  font-weight: 600; }
 
 body {
   background-image: url("/static/images/nlMural.jpg");
