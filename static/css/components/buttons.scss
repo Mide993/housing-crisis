@@ -10,7 +10,12 @@
 }
 
 .badge {
-    position: absolute;
-    top:50%;
-    left: 90%;
+    display: block;
+    width: 33%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+i {
+    padding: 10px;
 }
