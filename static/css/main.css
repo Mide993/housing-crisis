@@ -12,12 +12,16 @@
 
 .badge {
   display: block;
-  width: 33%;
+  width: 66%;
   margin: auto;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  box-shadow: 3px 6px 12px black !important; }
 
 i {
   padding: 10px; }
+
+.foot {
+  margin-bottom: 1rem; }
 
 form {
   padding-right: 1rem; }

@@ -11,11 +11,16 @@
 
 .badge {
     display: block;
-    width: 33%;
+    width: 66%;
     margin: auto;
     margin-top: 3rem;
+    box-shadow: $shadow;
 }
 
 i {
     padding: 10px;
+}
+
+.foot {
+    margin-bottom: 1rem;
 }

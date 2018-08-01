@@ -18,7 +18,6 @@
     <!--custom stylesheet-->
     <link rel="stylesheet" type="text/css" href="static/css/main.css" />
 
-
     <!--JS-->
     <!--JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -38,7 +37,6 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/private-landlord-rotation.js"></script>
 
-
     <!--emailjs-->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -48,7 +46,6 @@
     </script>
 </head>
 
-
 <body>
     <header>
         <div class="row header-margin">
@@ -56,8 +53,8 @@
                 <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo2.png" class="logos" alt="PPR logo"></a>
             </div>
             <div class=" col-xs-12 col-lg-8">
-                <button type="button" id="area_action_head" class="btn btn-outline-secondary btn-nav btn-block shadow" href="#">
-				    <h1>Belfast's housing crisis by area...</h1>
+                <button type="button" id="area_action_head" class="btn btn-info btn-nav btn-block shadow" href="#">
+				    <h1><strong>Belfast's housing crisis by area...</strong></h1>
 				    <p>click to refresh your charts</p>
 				</button>
             </div>
@@ -70,8 +67,6 @@
         <div class="row" id="main-content">
             <!--Left side column-->
             <div class="col-lg-3 side-text-box">
-
-                <!--TEST-->
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active info-color" data-toggle="tab" href="#home">Supply & Demand</a>
@@ -85,6 +80,7 @@
                         <h3>Its about SUPPLY and DEMAND</h3>
                         <p>The need for additional social housing is calculated by looking at <span id="text_effect_demand">how many people need housing (demand)</span> and if <span id="text_effect_supply">current planned housing is capable of meeting that need (supply).</span>
                             <br><br>When there is not enough public housing, <span id="text_effect_private_landlords">families end up homeless and the poorly regulated private rented sector is financed - through the public purse - to fulfil the state's obligation to promote the right to housing.</span></p>
+                        <hr>
                         <h3 class="info-color">Got INFORMATION?</h3>
                         <button type="button" class="btn btn-danger modal-trigger"><strong>SHARE IT!</strong></button>
                     </div>
@@ -132,10 +128,9 @@
                     </div>
                 </div>
             </div>
-            <!--Right side column-->
-
-
-            <div class="col-lg-6 offset-lg-3 info-modal">
+            
+            <!--Modal-->
+            <div class="col-10 offset-1 col-lg-6 offset-lg-3  info-modal">
                 <h3 class="info-color">Got INFORMATION?</h3>
                 <button type="button" class="btn btn-danger modal-close"><strong>CLOSE</strong></button>
                 <p>These are mostly 2015 staistics.<br><br>In 2016 the Housing Executive stopped publishing their statistics on how many people need housing and how many homes they are providing.<br><br> They also deleted all previous statistics from their
@@ -152,24 +147,17 @@
                 </div>
             </div>
 
+            
+            <!--Social media contacts-->
+            <div class="col-lg-6 offset-lg-3">
+                <span class="badge badge-danger foot">Follow Us<br>
+        		<a target="_blank" href="https://www.facebook.com/pprproject"><i class="fab fa-facebook-f fa-3x social-media"></i></a>
+        		<a target="_blank" href="https://twitter.com/PPR_Org"><i class="fab fa-twitter fa-3x social-media"></i></a>
+        		<a target="_blank" href="http://www.youtube.com/user/PPRProject?sub_confirmation=1"><i class="fab fa-youtube fa-3x social-media"></i></a></span>
+            </div>
 
         </div>
     </main>
-
-    <div class="row">
-    	<div class="col-lg-4">
-    	    <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo2.png" class="logos" alt="PPR logo"></a>
-    	</div>
-    	<div class="col-lg-4">
-    		<span class="badge badge-danger">Follow Us<br>
-    		<a target="_blank" href="https://www.facebook.com/pprproject"><i class="fab fa-facebook-f fa-2x social-media"></i></a>
-    		<a target="_blank" href="https://twitter.com/PPR_Org"><i class="fab fa-twitter fa-2x social-media"></i></a>
-    		<a target="_blank" href="http://www.youtube.com/user/PPRProject?sub_confirmation=1"><i class="fab fa-youtube fa-2x social-media"></i></a></span>
-    	</div>
-    	<div class="col-lg-4">
-            <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo.png" class="logos" alt="Equality Can't Wait logo"></a>
-        </div>
-    </div>
 
     <script src="js/send_email.js"></script>
 
