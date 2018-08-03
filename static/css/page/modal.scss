@@ -5,6 +5,7 @@
     position: fixed;
     display: none;
     box-shadow: $shadow;
+    z-index: 100;
 }
 
 .modal-close {
