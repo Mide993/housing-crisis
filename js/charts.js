@@ -16,10 +16,7 @@ $(document).ready(function() {
 		show_new_builds_by_year(ndx);
 		show_waiting_list_by_area(ndx);
 		show_severe_waiting_list(ndx);
-		
-		// functions for percentages
-		show_percentages()
-		
+
 		// render all of the composed charts
 		dc.renderAll();
 	}
@@ -33,32 +30,6 @@ $(document).ready(function() {
 		.dimension(dim)
 		.group(group);
 	}
-	
-	function show_percentages() {
-		let total;
-		
-		d3.csv("static/data/housingdata.csv", function(data) {
-		    // array for storing Housing_Stress > 30 values
-		    array = [];
-		    // reduce method used for summing Housing_Stress > 30
-		    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-		    
-		    // loop through Housing_Stress > 30 csv values
-		    for (let i = 0; i < data.length; i++) {
-		        data[i].Housing_Stress_gtr_30 = +data[i].Housing_Stress_gtr_30
-		        // store in Array
-		        array.push(data[i].Housing_Stress_gtr_30)
-		    }
-		    // store summed array value in total variable 
-		    total = array.reduce(reducer)
-		    //  return the total
-		    totalIsReady()
-		    }); 
-	}
-		function totalIsReady() {
-		    console.log(total)
-		}
-	
 	
 	/*Allocations row chart*/
 	function show_allocations_by_area(ndx) {
@@ -98,8 +69,7 @@ $(document).ready(function() {
 			.xAxis().ticks(10)
 			// FilterDimension.filter("B");
 	}
-
-
+	
 	// Waiting List figures by area (pie chart)
 	function show_waiting_list_by_area(ndx) {
 		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
@@ -115,13 +85,10 @@ $(document).ready(function() {
 				.group(waiting_list_by_area)
 				.ordinalColors(["#805600", "#AB7200", "#FDAF13", "#FFC34A"])
 				.label(function(d) {
-					return ("(" + d.key + ')') + " " + (d.value);
-				})
-				// .label(function(d) {
-				//     console.log(JSON.stringify(d));
-				// })	
+					return ("(" + d.key + ')') + " " + ((d.value / total * 100).toFixed(0) + "%");
+				})	
 	}
-
+	
 	// Severe Waiting List by area (pie chart)
 	function show_severe_waiting_list(ndx) {
 		var area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
@@ -136,7 +103,7 @@ $(document).ready(function() {
 			.group(severe_waiting_list)
 			.ordinalColors(["#550800", "#801F15", "#D4746A", "#FFB2AA"])
 			.label(function(d) {
-				return ("(" + d.key + ')') + " " + (d.value);
-			})
+				return ("(" + d.key + ')') + " " + ((d.value / total_2 * 100).toFixed(0) + "%");
+			})	
 	}
 });
