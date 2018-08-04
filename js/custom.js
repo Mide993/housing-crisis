@@ -20,11 +20,11 @@ $(document).ready(function() {
     });    
 
     // Allocations
-    $("#area_allocations").mouseenter(function() {
+    $("#area_effect").mouseenter(function() {
         $("#text_effect_supply").addClass("highlight");
         $(".fa-key").fadeTo(200, 1);
     });
-    $("#area_allocations").mouseleave(function() {
+    $("#area_effect").mouseleave(function() {
         $("#text_effect_supply").removeClass("highlight");
         $(".fa-key").fadeTo(200, .5);
     });
@@ -40,21 +40,21 @@ $(document).ready(function() {
     });
 
     // Severe Waiting list
-    $("#severe_waiting_list").mouseenter(function() {
+    $("#severe_list").mouseenter(function() {
         $("#text_effect_demand").addClass("highlight");
         $(".fa-exclamation-triangle").fadeTo(200, 1);
     });
-    $("#severe_waiting_list").mouseleave(function() {
+    $("#severe_list").mouseleave(function() {
         $("#text_effect_demand").removeClass("highlight");
         $(".fa-exclamation-triangle").fadeTo(200, .5);
     });
 
     // Waiting List
-    $("#area_waiting_list").mouseenter(function() {
+    $("#area_list").mouseenter(function() {
         $("#text_effect_demand").addClass("highlight");
         $(".fa-users").fadeTo(200, 1);
     });
-    $("#area_waiting_list").mouseleave(function() {
+    $("#area_list").mouseleave(function() {
         $("#text_effect_demand").removeClass("highlight");
         $(".fa-users").fadeTo(200, .5);
     });
