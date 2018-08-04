@@ -178,7 +178,7 @@ h5 {
   background: #155475;
   padding: 2rem;
   border-radius: 22px;
-  position: fixed;
+  position: absolute;
   display: none;
   box-shadow: 3px 6px 12px black !important;
   z-index: 100; }
