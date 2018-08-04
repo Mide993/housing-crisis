@@ -45,3 +45,17 @@
     top: 70%;
     left: 80%;
 }
+
+#area-selector {
+    padding: 5px;
+    font-size: 1.5rem;
+    box-shadow: $shadow;
+    background: #fff !important;
+    border: none;
+}
+
+.dc-select-menu {
+    background: #fff !important;
+    border: none;
+    padding: 5px;
+}

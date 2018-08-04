@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.side-text-box, .chart_background').fadeTo("slow", 1)
     });    
 
-// Allocations
+    // Allocations
     $("#area_allocations").mouseenter(function() {
         $("#text_effect_supply").addClass("highlight");
         $(".fa-key").fadeTo(200, 1);
@@ -29,7 +29,7 @@ $(document).ready(function() {
         $(".fa-key").fadeTo(200, .5);
     });
 
-// New Builds
+    // New Builds
     $("#builds_by_year").mouseenter(function() {
         $("#text_effect_supply").addClass("highlight").fadeIn(200, 1);
         $(".fa-home").fadeTo(200, 1);
@@ -39,7 +39,7 @@ $(document).ready(function() {
         $(".fa-home").fadeTo(200, .5);
     });
 
-// Severe Waiting list
+    // Severe Waiting list
     $("#severe_waiting_list").mouseenter(function() {
         $("#text_effect_demand").addClass("highlight");
         $(".fa-exclamation-triangle").fadeTo(200, 1);
@@ -65,16 +65,6 @@ $(document).ready(function() {
     });
     $("#area_private").mouseleave(function() {
         $("#text_effect_private_landlords").removeClass("highlight");
-    });
-
-    // Take Action
-    $(".btn").mouseenter(function() {
-        $("#text_effect_action").addClass("highlight");
-        $(".logos").fadeTo(200, 1);
-    });
-    $(".btn").mouseleave(function() {
-        $("#text_effect_action").removeClass("highlight");
-        $(".logos").fadeTo(200, 0.5);
     });
 
     // Logos

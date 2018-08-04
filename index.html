@@ -33,8 +33,10 @@
     <!--font awesome js-->
     <!--<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>-->
     <!--Custom js-->
+    <script type="text/javascript" src="js/calc.js"></script>
     <script type="text/javascript" src="js/charts.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+
     <script type="text/javascript" src="js/private-landlord-rotation.js"></script>
 
     <!--emailjs-->
@@ -53,10 +55,9 @@
                 <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo2.png" class="logos" alt="PPR logo"></a>
             </div>
             <div class=" col-xs-12 col-lg-8">
-                <button type="button" id="area_action_head" class="btn btn-info btn-nav btn-block shadow" href="#">
+                <button type="button" id="area_action_head" class="btn btn-info btn-nav btn-block shadow" onclick=location=URL>
 				    <h1><strong>Belfast's housing crisis by area...</strong></h1>
-				    <p>click to refresh your charts</p>
-				    <div id="area-selector"></div>
+				    <p class="center">click this bar to refresh your charts</p>
 				</button>
             </div>
             <div class="col-lg-2 d-none d-lg-block">
@@ -119,6 +120,7 @@
                             <h4 class="chart-heading-3">SUPPLY: Homes allocated</h4>
                             <i class="fas fa-key fa-5x chart-icons" aria-hidden="true"></i>
                         </div>
+                        <div id="area-selector"></div>
                     </div>
                     <!--New homes built row chart-->
                     <div class="col-lg-6 col-md-6 chart_background">
