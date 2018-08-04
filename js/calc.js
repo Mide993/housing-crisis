@@ -1,10 +1,13 @@
-let total;
+let totalStress;
 
-let total_2;
+let totalNeed;
 
 d3.csv("static/data/housingdata.csv", function(data) {
     // array for storing Housing_Stress > 30 values
-    array = [];
+    arrayStress = [];
+
+    // array for storing Housing_Stress > 150 values
+    arrayNeed = [];
     
     // reduce method used for summing Housing_Stress > 30
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -13,26 +16,27 @@ d3.csv("static/data/housingdata.csv", function(data) {
     for (let i = 0; i < data.length; i++) {
         data[i].Housing_Stress_gtr_30 = +data[i].Housing_Stress_gtr_30
         // store in Array
-        array.push(data[i].Housing_Stress_gtr_30)
+        arrayStress.push(data[i].Housing_Stress_gtr_30)
     }
     
     // store summed array value in total variable 
-    total = array.reduce(reducer)
-
-
-    // array for storing Housing_Stress > 150 values
-    array_2 = [];
+    totalStress = arrayStress.reduce(reducer)
 
     // loop through Housing_Stress > 150 csv values
     for (let i = 0; i < data.length; i++) {
         data[i].Critical_Need_gtr_150 = +data[i].Critical_Need_gtr_150
         // store in Array
-        array_2.push(data[i].Critical_Need_gtr_150)
+        arrayNeed.push(data[i].Critical_Need_gtr_150)
     }
     
     // store summed array value in total variable 
-    total_2 = array_2.reduce(reducer)
+    totalNeed = arrayNeed.reduce(reducer)
     }); 
+
+/*TEST FUNCTION*/
+function multiplication(numOne, numTwo) {
+    return numOne * numTwo;
+}
 
 
 

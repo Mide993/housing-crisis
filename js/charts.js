@@ -7,7 +7,7 @@ $(document).ready(function() {
 	
 	function makeGraphs(error, housingData) {
 		// create the variable for the crossfilter instance of housingData
-		var ndx = crossfilter(housingData);
+		const ndx = crossfilter(housingData);
 		
 	
 		// execute the functions to compose the charts
@@ -28,13 +28,13 @@ $(document).ready(function() {
 		
 		dc.selectMenu("#area-selector")
 		.dimension(dim)
-		.group(group);
+		.group(group)
 	}
 	
 	/*Allocations row chart*/
 	function show_allocations_by_area(ndx) {
-		var area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
-		var allocations_by_area = area_dim.group().reduceSum(dc.pluck('Allocations'));
+		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
+		const allocations_by_area = area_dim.group().reduceSum(dc.pluck('Allocations'));
 
 		dc.rowChart("#area_allocations")
 			.width(300)
@@ -50,12 +50,8 @@ $(document).ready(function() {
 	
 	/*New Builds row chart*/
 	function show_new_builds_by_year(ndx) {
-		var area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
-		var new_builds_by_year = area_dim.group().reduceSum(dc.pluck('New_Housing_2010_15'));
-		/*Check what FilterDimension is*/
-		// var FilterDimension = ndx.dimension(function (d) {
-		// 	return d.key;
-		// 	});
+		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
+		const new_builds_by_year = area_dim.group().reduceSum(dc.pluck('New_Housing_2010_15'));
 
 		dc.rowChart("#builds_by_year")
 			.width(300)
@@ -67,7 +63,6 @@ $(document).ready(function() {
 			.ordinalColors(["#051C38", "#143153", "#4B688B", "#748BA7"])
 			.elasticX(true)
 			.xAxis().ticks(10)
-			// FilterDimension.filter("B");
 	}
 	
 	// Waiting List figures by area (pie chart)
@@ -85,14 +80,14 @@ $(document).ready(function() {
 				.group(waiting_list_by_area)
 				.ordinalColors(["#805600", "#AB7200", "#FDAF13", "#FFC34A"])
 				.label(function(d) {
-					return ("(" + d.key + ')') + " " + ((d.value / total * 100).toFixed(0) + "%");
+					return ("(" + d.key + ')') + " " + ((d.value / totalStress * 100).toFixed(0) + "%");
 				})	
 	}
 	
 	// Severe Waiting List by area (pie chart)
 	function show_severe_waiting_list(ndx) {
-		var area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
-		var severe_waiting_list = area_dim.group().reduceSum(dc.pluck('Critical_Need_gtr_150'));
+		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
+		const severe_waiting_list = area_dim.group().reduceSum(dc.pluck('Critical_Need_gtr_150'));
 
 		dc.pieChart('#severe_waiting_list')
 			.height(300)
@@ -103,7 +98,7 @@ $(document).ready(function() {
 			.group(severe_waiting_list)
 			.ordinalColors(["#550800", "#801F15", "#D4746A", "#FFB2AA"])
 			.label(function(d) {
-				return ("(" + d.key + ')') + " " + ((d.value / total_2 * 100).toFixed(0) + "%");
+				return ("(" + d.key + ')') + " " + ((d.value / totalNeed * 100).toFixed(0) + "%");
 			})	
 	}
 });
