@@ -42,9 +42,9 @@
     <!--emailjs-->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init("user_yKFJuhA6m83EpxYAknonr");
-        })();
+       (function(){
+          emailjs.init("user_hXIMEYYJ3YXZmGntwLlJp");
+       })();
     </script>
 
 </head>
@@ -126,6 +126,7 @@
                             <h4 class="chart-heading-3">SUPPLY: Homes allocated</h4>
                             <i class="fas fa-key fa-5x chart-icons" aria-hidden="true"></i>
                         </div>
+                        <!--Areas selector dropdown-->
                         <div id="area-selector"></div>
                     </div>
                     <!--New homes built row chart-->
@@ -147,7 +148,7 @@
                         <form onsubmit="return sendMail(this);" method="POST">
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
-                            <textarea rows="5" name="info_query" class="form-control" id="info_query" placeholder="Any craic, information or ideas... We're all ears (and eyes)" required></textarea>
+                            <textarea rows="5" name="info_query" class="form-control" id="info_query" placeholder="Any information, ideas or would like to get involved? Contact us!" required></textarea>
                             <button type="submit" class="btn btn-success center-block"><strong>Send!</strong></button>
                         </form>
                     </div>
@@ -163,7 +164,7 @@
             </div>
         </div>
     </main>
-    <script src="js/send_email.js"></script>
+    <script src="js/sendEmail.js"></script>
 </body>
 
 
