@@ -1,7 +1,7 @@
 /*Sample Test*/
 describe("Calculator", function() {
-    describe("Multiply function", function() {
-        it("should give the product of two numbers", function() {
+    describe("Addition function", function() {
+        it("should sum the totals in an array", function() {
             expect(multiplication(2, 3)).toBe(6);
         });
     });

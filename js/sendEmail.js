@@ -7,7 +7,7 @@ function sendMail(contactForm) {
     .then (
         function(response) {
             alert("Thank you for contacting the campaign. Hopefully we can work together!", response);
-
+            
         },
         function(error) {
             alert("Your email failed to send. Please try again. If the problem persists, contact info@pprproject.org.", error);
