@@ -53,9 +53,9 @@ Users can contact the Equality Can't Wait campaign by sending an email directly 
 - [Sass](https://sass-lang.com/)
     - **Sass/scss** CSS extension is used to code and organise CSS stylesheets
 
-### Hosting
+### Hosting (To be completed)
 - [Heroku](https://www.heroku.com/)
-    - The Cloud Application Platform **Heroku** hosts the MDA TimeBank Application.
+    - The Cloud Application Platform **Heroku** hosts the "Belfast's Housing Crisis by Area". 
 
 ## Testing 
 TO BE COMPLETED (manual and Jasmine tests)
@@ -69,7 +69,7 @@ TO BE COMPLETED (manual and Jasmine tests)
 ### Getting the code up and running
 1. Clone this repository by running the ```https://github.com/Deasun/housing-crisis.git``` command
 2. pip install requirements
-3. The project will now run on [localhost](http://127.0.0.1:8080)
+3. run the index.html file in a browser and the page will display
 4. We welcome all contributions to improving our code, so make changes you think are needed/desired and submit a pull request
 
 ## Credits
