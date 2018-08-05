@@ -8,54 +8,9 @@
 @import "helpers/mixins";
 @import "components/buttons";
 @import "components/emailjs";
-@import "page/charts";
-@import "page/landing_page";
-@import "page/header";
-@import "page/paragraphs";
-@import "page/fonts";
-@import "page/modal";
-
-// ******************************************************************Background
-body {
-    background: {
-        image: url("/static/images/nlMural.jpg");
-        repeat: no-repeat;
-        size: cover;
-        position: center;
-        attachment: fixed;
-    }
-    @include chart-headers-font;
-}
-
-.container-fluid {
-    padding: {
-        top: .5rem;
-    }
-
-}
-
-// *********************************************Margins, Padding, Heigh & Width
-#main-content {
-    margin-top: $margin;
-    text-align: left;
-    padding: 0 auto;
-    max-height: 720px;
-}
-
-
-
-// ************************************************************Hover Effects
-.highlight {
-    background-color: #17a2b8;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.social-media:hover {
-    color: black;
-  
-}
-
-// ******************************************************************FOOTER
+@import "page/_charts";
+@import "page/_header";
+@import "page/_paragraphs";
+@import "page/_fonts";
+@import "page/_modal";
+@import "page/_body";

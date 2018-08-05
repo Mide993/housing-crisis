@@ -1,0 +1,13 @@
+p {
+    @include para-font;
+}
+
+.side-text-box {
+    background: #000000ad;
+    padding: 2rem;
+    box-shadow: $shadow;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: auto;
+}
+

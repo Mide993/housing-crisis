@@ -1,0 +1,24 @@
+body {
+    background: {
+        image: url("/static/images/nlMural.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+        attachment: fixed;
+    }
+    @include chart-headers-font;
+}
+
+.container-fluid {
+    padding: {
+        top: .5rem;
+    }
+
+}
+
+#main-content {
+    margin-top: $margin;
+    text-align: left;
+    padding: 0 auto;
+    max-height: 720px;
+}

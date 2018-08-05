@@ -15,5 +15,16 @@
 }
 
 @mixin para-font {
-    font-family: "Special Elite";
+    color: $white;
+    text-align: justify;
+    font: {
+        family: "Special Elite";
+        size: .8rem;
+        weight: 700;
+    }
+    @media (min-width: $tablet-width) {
+        font: {
+        size: 1rem;
+        }
+    }
 }
