@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.side-text-box, .chart_background').fadeTo("slow", 1)
     });    
 
-    // Allocations
+    // Allocations - highlight text on hover
     $("#area_effect").mouseenter(function() {
         $("#text_effect_supply").addClass("highlight");
         $(".fa-key").fadeTo(200, 1);
@@ -29,7 +29,7 @@ $(document).ready(function() {
         $(".fa-key").fadeTo(200, .5);
     });
 
-    // New Builds
+    // New Builds - highlight text on hover
     $("#builds_by_year").mouseenter(function() {
         $("#text_effect_supply").addClass("highlight").fadeIn(200, 1);
         $(".fa-home").fadeTo(200, 1);
@@ -39,7 +39,7 @@ $(document).ready(function() {
         $(".fa-home").fadeTo(200, .5);
     });
 
-    // Severe Waiting list
+    // Severe Waiting list - highlight text on hover
     $("#severe_list").mouseenter(function() {
         $("#text_effect_demand").addClass("highlight");
         $(".fa-exclamation-triangle").fadeTo(200, 1);
@@ -49,7 +49,7 @@ $(document).ready(function() {
         $(".fa-exclamation-triangle").fadeTo(200, .5);
     });
 
-    // Waiting List
+    // Waiting List - highlight text on hover
     $("#area_list").mouseenter(function() {
         $("#text_effect_demand").addClass("highlight");
         $(".fa-users").fadeTo(200, 1);
@@ -59,7 +59,7 @@ $(document).ready(function() {
         $(".fa-users").fadeTo(200, .5);
     });
 
-    // Private Landlords
+    // Private Landlords - highlight text & fade on hover
     $("#area_private").mouseenter(function() {
         $("#text_effect_private_landlords").addClass("highlight");
     });
@@ -67,7 +67,7 @@ $(document).ready(function() {
         $("#text_effect_private_landlords").removeClass("highlight");
     });
 
-    // Logos
+    // Logos - hover fade effects
     $(".logos").mouseenter(function() {
         $(this).fadeTo(200, 1);
     });   

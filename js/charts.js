@@ -11,18 +11,18 @@ $(document).ready(function() {
 		
 	
 		// execute the functions to compose the charts
-		show_area_selector(ndx)
-		show_allocations_by_area(ndx);
-		show_new_builds_by_year(ndx);
-		show_waiting_list_by_area(ndx);
-		show_severe_waiting_list(ndx);
+		showAreaSelector(ndx)
+		showAllocationsByArea(ndx);
+		showNewBuildsByYear(ndx);
+		showWaitingListByArea(ndx);
+		showSevereWaitingList(ndx);
 
 		// render all of the composed charts
 		dc.renderAll();
 	}
 	
 	// Area Selector Dropdown
-	function show_area_selector(ndx) {
+	function showAreaSelector(ndx) {
 		dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		group = dim.group()
 		
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	}
 	
 	/*Allocations row chart*/
-	function show_allocations_by_area(ndx) {
+	function showAllocationsByArea(ndx) {
 		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		const allocations_by_area = area_dim.group().reduceSum(dc.pluck('Allocations'));
 
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	}
 	
 	/*New Builds row chart*/
-	function show_new_builds_by_year(ndx) {
+	function showNewBuildsByYear(ndx) {
 		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		const new_builds_by_year = area_dim.group().reduceSum(dc.pluck('New_Housing_2010_15'));
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	}
 	
 	// Waiting List figures by area (pie chart)
-	function show_waiting_list_by_area(ndx) {
+	function showWaitingListByArea(ndx) {
 		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		const waiting_list_by_area = area_dim.group().reduceSum(dc.pluck('Housing_Stress_gtr_30'));
 		
@@ -79,13 +79,14 @@ $(document).ready(function() {
 				.dimension(area_dim)
 				.group(waiting_list_by_area)
 				.ordinalColors(["#805600", "#AB7200", "#FDAF13", "#FFC34A"])
+				/*use totalStress variable to calculate percentages*/
 				.label(function(d) {
 					return ("(" + d.key + ')') + " " + ((d.value / totalStress * 100).toFixed(0) + "%");
 				})	
 	}
 	
 	// Severe Waiting List by area (pie chart)
-	function show_severe_waiting_list(ndx) {
+	function showSevereWaitingList(ndx) {
 		const area_dim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		const severe_waiting_list = area_dim.group().reduceSum(dc.pluck('Critical_Need_gtr_150'));
 
@@ -97,6 +98,7 @@ $(document).ready(function() {
 			.dimension(area_dim)
 			.group(severe_waiting_list)
 			.ordinalColors(["#550800", "#801F15", "#D4746A", "#FFB2AA"])
+			/*use totalNeed variable to calculate percentages*/
 			.label(function(d) {
 				return ("(" + d.key + ')') + " " + ((d.value / totalNeed * 100).toFixed(0) + "%");
 			})	

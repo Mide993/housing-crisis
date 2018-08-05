@@ -1,13 +1,14 @@
-let totalStress;
+// variables to store totals
+let totalStress, totalNeed;
 
-let totalNeed;
-
-d3.csv("static/data/housingdata.csv", function(data) {
+// function to calculate totals
+const getTotal = (data) => {
+    
     // array for storing Housing_Stress > 30 values
-    arrayStress = [];
+    let arrayStress = [];
 
     // array for storing Housing_Stress > 150 values
-    arrayNeed = [];
+    let arrayNeed = [];
     
     // reduce method used for summing Housing_Stress > 30
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -31,8 +32,13 @@ d3.csv("static/data/housingdata.csv", function(data) {
     
     // store summed array value in total variable 
     totalNeed = arrayNeed.reduce(reducer)
-    }); 
+    
+}
 
+// apply function to d3 object
+d3.csv("static/data/housingdata.csv", getTotal);
+    
+    
 /*TEST FUNCTION*/
 function multiplication(numOne, numTwo) {
     return numOne * numTwo;
