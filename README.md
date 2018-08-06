@@ -23,7 +23,7 @@ The datasets are visualised through interactive charts which can be filtered to 
 Users can send email messages from the site to pass on information or statistics to the Equality Can't Wait campaign.
 
 ### How does it work
-The "Belfast's Housing Crisis by Area" data is stored in the **static/data/housingdata.csv** file. The **Javascript** libraries **dc.js** (including **crossfilter** to enable interaction) and **d3.js** are used to plot and render charts constructed in the ```charts.js``` file or in response to the user's filter.
+The "Belfast's Housing Crisis by Area" data is stored in the **static/data/housingdata.csv** file. The **Javascript** library **d3.js** is used to retrieve data from the housingData.csv folder and works with **dc.js** (including **crossfilter** to enable interaction) to plot and render charts constructed in the ```charts.js``` file.
 
 The programme is written in **Javascript** and the site is styled with a **Bootswatch** (**Bootstrap**) theme and **JQuery** code. The Bootstrap grid layout is used to make the application responsive across mobile, tablet and desktop devices. The site is designed using a **mobile-first** design and can be viewed [HERE](insert link following deployment).
 
@@ -47,21 +47,17 @@ Users can contact the Equality Can't Wait campaign by sending an email directly 
 - [Bootstrap](http://getbootstrap.com/)
     - **Bootstrap 4.0.0** is used to render a responsive layout
 - [Bootswatch](https://bootswatch.com/)
-    - the **Bootswatch** skethcy theme was used on elements of the site
+    - the **Bootswatch** sketchy theme was used on elements of the site
 - [JQuery](https://jquery.com)
     - **JQuery** adds animation styling to our site to enhance user experience. [jquery.simple-text-rotator](https://www.npmjs.com/package/jquery.simple-text-rotator) rotates the the total amount of public monies paid to private landlords across the city by area
 - [Sass](https://sass-lang.com/)
     - **Sass/scss** CSS extension is used to code and organise CSS stylesheets
 
-### Hosting (To be completed)
-- [Heroku](https://www.heroku.com/)
-    - The Cloud Application Platform **Heroku** hosts the "Belfast's Housing Crisis by Area". 
-
 ## Testing 
 TO BE COMPLETED (manual and Jasmine tests)
 
 ## Contributing
-"Belfast's Housing Crisis by Area" is an evolving project. The Equality Can't Wait campaign intend on periodically updating the site to include up to date statistis collected through freedom of information request or via user submissions/contact via the site. We welcome pull requests concerning the following planned features (or any other suggestions you may have):
+"Belfast's Housing Crisis by Area" is an evolving project. The Equality Can't Wait campaign intend on periodically updating the site to include up statistis collected through freedom of information request or via user submissions/contact via the site. We welcome pull requests concerning the following planned features (or any other suggestions you may have):
 * archive of datasets for download
 * different pages displaying thematic issues around housing in Belfast
 * data visulation using Google Maps Platform APIs to display comprehensive area based statistics
