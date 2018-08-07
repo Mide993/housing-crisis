@@ -1,10 +1,5 @@
 $(document).ready(function() {
     
-    // Landing Alert
-    $("body").click(function() {
-	    $("#landing-alert").hide("fast");
-    })
-    
     // Slide left para column on pageload
     $('.side-text-box').hide().slideDown(2000, 'swing');
     
@@ -59,14 +54,6 @@ $(document).ready(function() {
         $(".fa-users").fadeTo(200, .5);
     });
 
-    // Private Landlords - highlight text & fade on hover
-    $("#area_private").mouseenter(function() {
-        $("#text_effect_private_landlords").addClass("highlight");
-    });
-    $("#area_private").mouseleave(function() {
-        $("#text_effect_private_landlords").removeClass("highlight");
-    });
-
     // Logos - hover fade effects
     $(".logos").mouseenter(function() {
         $(this).fadeTo(200, 1);
@@ -74,6 +61,4 @@ $(document).ready(function() {
     $(".logos").mouseleave(function() {
         $(this).fadeTo(200, 0.5);
     });
-
-    
 });
