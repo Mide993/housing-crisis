@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// wait for the data to be fetched & formatted before executing makeGraphs function
+	// wait for the data to be fetched & formatted before makeGraphs function
 	queue()
 		.defer(d3.csv, "static/data/housingdata.csv")
 		.await(makeGraphs);
@@ -9,14 +9,14 @@ $(document).ready(function() {
 		// create the variable for the crossfilter instance of housingData
 		const ndx = crossfilter(housingData);
 
-		// execute the functions to compose the charts
+		// functions to constuct the charts
 		showAreaSelector(ndx)
 		showAllocationsByArea(ndx);
 		showNewBuildsByYear(ndx);
 		showWaitingListByArea(ndx);
 		showSevereWaitingList(ndx);
-
-		// render all of the composed charts
+		
+		// render all of the charts
 		dc.renderAll();
 	}
 	
