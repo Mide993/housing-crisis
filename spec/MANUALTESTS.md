@@ -60,4 +60,6 @@ The above features were tested in each of the following browsers:
   - Opera
   - Microsoft Edge
   - Mozilla Firefox
+ 
+> when carrying out testing with Firefox, it was necessary to set the pieChart widths to be identical, otherwise they would not left-align in their divs.
 
