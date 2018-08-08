@@ -23,24 +23,19 @@
     <!--bootstrap JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <!--Libraries for charting-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
     <!--Text-rotator plug-in-->
-    <script type="text/javascript" src="static/js/jquery.simple-text-rotator.js"></script>
-    
-    <!--Custom JS-->
-    <script type="text/javascript" src="js/calc.js"></script>
-    <script type="text/javascript" src="js/charts.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script src="static/js/jquery.simple-text-rotator.js"></script>
     
     <!--JS text-rotator-->
-    <script type="text/javascript" src="js/private-landlord-rotation.js"></script>
+    <script src="js/private-landlord-rotation.js"></script>
 
     <!--emailjs-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
        (function(){
           emailjs.init("user_hXIMEYYJ3YXZmGntwLlJp");
        })();
@@ -55,10 +50,10 @@
                 <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo2.png" class="logos" alt="PPR logo"></a>
             </div>
             <div class=" col-xs-12 col-lg-8">
-                <button type="button" id="area_action_head" class="btn btn-info btn-nav btn-block shadow" onclick=location=URL>
+                <nav id="area_action_head" class="btn btn-info btn-nav btn-block shadow" onclick=location=URL>
 				    <h1><strong>Belfast's housing crisis by area...</strong></h1>
 				    <p class="center">click this bar to refresh your charts</p>
-				</button>
+				</nav>
             </div>
             <div class="col-lg-2 d-none d-lg-block">
                 <a target="_blank" href="https://www.pprproject.org"><img src="static/images/logo.png" class="logos" alt="Equality Can't Wait logo"></a>
@@ -125,7 +120,7 @@
                             <i class="fas fa-key fa-5x chart-icons" aria-hidden="true"></i>
                         </div>
                         <!--Areas selector dropdown-->
-                        <!--<div id="area-selector"></div>-->
+                        <div id="area-selector"></div>
                     </div>
                     <!--New homes built row chart-->
                     <div id="builds_by_year" class="col-lg-6 col-md-6 chart_background">
@@ -134,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <!--Modal-->
+            <!--Modal with email form-->
             <div class="col-10 offset-1 col-lg-6 offset-lg-3  info-modal">
                 <h3 class="info-color">Got INFORMATION?</h3>
                 <button type="button" class="btn btn-danger modal-close"><strong>CLOSE</strong></button>
@@ -160,6 +155,12 @@
             </div>
         </div>
     </main>
+    <!--Custom JS-->
+    <script src="js/calc.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <!--EmailJS script for sending & alerting success/failure-->
     <script src="js/sendEmail.js"></script>
 </body>
 
