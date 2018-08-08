@@ -1,6 +1,6 @@
 # Manual Tests
 ## Introduction 
-The purpose of the manual testing is to test back and front end functionality of “Belfast Housing Crisis” datavisulation application.
+Manual testing is used in this project to test back and front end features of “Belfast Housing Crisis” datavisulation application.
 
 ## Features to be tested 
 ### The following features were tested manually:
