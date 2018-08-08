@@ -4,10 +4,10 @@
 @import "helpers/media_queries";
 
 
-@import "helpers/variables";
-@import "helpers/mixins";
-@import "components/buttons";
-@import "components/emailjs";
+@import "helpers/_variables";
+@import "helpers/_mixins";
+@import "components/_buttons";
+@import "components/_emailjs";
 @import "page/_charts";
 @import "page/_header";
 @import "page/_paragraphs";
