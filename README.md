@@ -31,7 +31,7 @@ Users can contact the Equality Can't Wait campaign by sending an email directly 
 
 **AWS Cloud9** has been used as the IDE for deployment of site on github pages. 
 
-## Tech Used
+## Technology Used
 
 ### Code
 - **HTML**, **CSS**, and **JavaScript (inc JQuery)**
