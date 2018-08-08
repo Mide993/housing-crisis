@@ -4,7 +4,7 @@ A data visualisation page demonstrating homelessness and public housing provisio
 ## Overview
 
 ### What is this application for?
-In the north of Ireland, decisions about new build public housing programmes are supposed to be made following assessing housing need in different areas. This includes the numbers of people experiencing homelessness and housing need, the availability of current public housing and any forthcoming plans to build new housing (additional stock).
+In the north of Ireland, decisions about new build public housing programmes are supposed to be made following the assessment of housing need in different areas. This includes the numbers of people experiencing homelessness and housing need, the availability of current public housing and any forthcoming plans to build new housing (additional stock).
 
 Official statistics are a necessary component of this decision making process and are critical in enabling the public to hold politicians and public officials to account.
 
@@ -25,7 +25,7 @@ Users can send email messages from the site to pass on information or make conta
 ### How does it work
 The "Belfast's Housing Crisis by Area" data is stored in the **static/data/housingdata.csv** file. The **Javascript** library **d3.js** is used to parse the data from the housingData.csv file and works with **dc.js** (including **crossfilter**) to plot and render charts constructed in the ```charts.js``` and ```calc.js``` file.
 
-The programme is written in **Javascript**, the site is styled with a **Bootswatch** (**Bootstrap**) theme and **JQuery** code. The Bootstrap grid layout is used to make the application responsive across mobile, tablet and desktop devices. The site is designed using a **mobile-first** design principles.
+The programme is written in **Javascript**, the site is styled with a **Bootswatch** (**Bootstrap**) theme and **JQuery** code. The Bootstrap grid layout is used to make the application responsive across mobile, tablet and desktop devices. The site is designed using **mobile-first** design principles.
 
 Users can contact the Equality Can't Wait campaign by sending an email directly from the site using **EmailJS** service.
 
@@ -67,7 +67,7 @@ The **Jasmine Testing Framework** was used to test the callback function made to
 ### Getting the code up and running
 1. Clone this repository by opening your Terminal, change the current working directory to the location where you want the cloned directory to be made.  
 2. Type `$git clone https://github.com/Deasun/housing-crisis.git`  and hit Enter. Your repository will be ready.
-3. Run the application in a broswer and the page will display
+3. Run the index.html, open in a broswer and the page will display
 4. We welcome all contributions to improving our code, so make changes you think are needed/desired and submit a pull request
 
 ## Credits

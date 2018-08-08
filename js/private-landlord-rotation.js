@@ -6,5 +6,4 @@ $(".dissolve").textrotator({
         separator: ",",
         speed: 5000
     });
-    
 }); 

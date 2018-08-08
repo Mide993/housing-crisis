@@ -2,7 +2,6 @@
 Test getTotalStress which is used as a callback function (getStressTotal,
 getNeedTotal) in the d3.csv()method (calc.js)
 */
-
 describe("Calculate totals", function() {
     describe("get data", function() {
         // simulating the d3 parsed object 

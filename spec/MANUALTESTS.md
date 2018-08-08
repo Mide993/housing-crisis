@@ -1,6 +1,6 @@
 # Manual Tests
 ## Introduction 
-Manual testing is used in this project to test back and front end features of “Belfast Housing Crisis” datavisulation application.
+Manual testing is used in this project to test back and front end features of “Belfast Housing Crisis” datavisualisation application.
 
 ## Features to be tested 
 ### The following features were tested manually:
@@ -44,6 +44,8 @@ Below are examples of tests used on front and back end functionality. The testin
 |6|Verify that EmailJS sends from application to site inbox|There will be an alert triggered indicating success|**input: `name`, `email`, `comments` into email form**; check site inbox for new message|Alert reading *“Thank you for contacting the campaign. Hopefully we can work together!”*, Message in site inbox|Alert reading *“Thank you for contacting the campaign. Hopefully we can work together!”*, Message in site inbox|**PASS**|
 
 ### JQuery [(custom.js)](/js/custom.js)
+> columns condensed for JQuery feature tests 
+
 |`TEST CASE ID` |`TEST SCENARIO`| `TEST CASE` |`TEST DATA/STEPS` `EXPECTED RESULT` | `PASS/FAIL`|
 |---|---|---|---|---|
 |7|Verify that hover produces fade and highlight effect|**Hovering** over **[a]** will produce **fade** effect on **[b]** and **highlight** effect on **[c]**:<br>|**[a = hover]:[b = fade]:[c = highlight]**<br><br>[Allocations rowChart div] : [Key icon] : [“current planned housing is capable of meeting that need (supply)”]<br><br>**[New Build Housing rowChart div] : [Home icon] : [“current planned housing is capable of meeting that need (supply)”]**<br><br>[Household Stress pieChart div] : [Users icon] : [“how many people need housing (demand)"]<br><br>**[Critical Need pieChart div] : [Exclamation icon] : [“how many people need housing (demand)”]**]|**PASS**|
