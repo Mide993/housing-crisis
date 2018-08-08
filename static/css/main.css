@@ -186,7 +186,7 @@ h5 {
   right: 1rem; }
 
 body {
-  background-image: url("static/images/nlmural.jpg");
+  background-image: url("../images/nlmural.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
