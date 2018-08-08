@@ -54,7 +54,9 @@ Users can contact the Equality Can't Wait campaign by sending an email directly 
     - **Sass/scss** CSS extension is used to code and organise CSS stylesheets
 
 ## Testing 
-TO BE COMPLETED (manual and Jasmine tests)
+The back and front end features were tested manually. The manual testing methodology and tests are found [here](js/spec/MANUALTESTS.md) 
+
+The **Jasmine Testing Framework** was used to test the callback function made to the d3.csv() method in [calc.js](js/calc.js). To test the function outside of the asynchronous request made to the .csv file, the function was abstracted in calc.js and an object of arrays created to test the function (getTotalStress). The test suite can be found [here](spec/calcSpec).
 
 ## Contributing
 "Belfast's Housing Crisis by Area" is an evolving project. The Equality Can't Wait campaign intend on periodically updating the site to include up statistis collected through freedom of information request or via user submissions/contact via the site. We welcome pull requests concerning the following planned features (or any other suggestions you may have):
