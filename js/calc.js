@@ -1,9 +1,21 @@
 /*
-function(s) to calculate the sum of the selected csv data parsed 
+function to calculate the sum of the selected csv data parsed 
 into objects by d3. The values will be added to an array, summed and 
 stored in the variables totalStress and totalNeed to be used in the 
 makeGraphs function in charts.js
-*/ 
+*/
+function getTotalStress(obj) {
+    let arrayStress = [];
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    for (let i = 0; i < obj.length; i++) {
+        obj[i].Stress = +obj[i].Stress;
+        arrayStress.push(obj[i].Stress);
+    }
+    return stressTotal = arrayStress.reduce(reducer);
+}
+
+
+// use function in callback function for d3.csv() method
 const getStressTotal = (data) => {
     let arrayStress = [];
     const reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -24,7 +36,7 @@ const getNeedTotal = (data) => {
     return totalNeed = arrayNeed.reduce(reducer);
 }
 
-// d3 processing the csv file data
+// use d3.csv() method
 d3.csv("static/data/housingdata.csv", getStressTotal);
 d3.csv("static/data/housingdata.csv", getNeedTotal);
 
@@ -32,15 +44,6 @@ d3.csv("static/data/housingdata.csv", getNeedTotal);
 // Testing
 // let myObj = [{PC: "West", Stress: 30}, {PC: "East", Stress: 60}]
 
-function getTotalStress(obj) {
-    let arrayStress = [];
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    for (let i = 0; i < obj.length; i++) {
-        obj[i].Stress = +obj[i].Stress;
-        arrayStress.push(obj[i].Stress);
-    }
-    return stressTotal = arrayStress.reduce(reducer);
-}
 
 
 

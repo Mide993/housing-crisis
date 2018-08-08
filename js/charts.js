@@ -69,18 +69,19 @@ $(document).ready(function() {
 		const areaDim = ndx.dimension(dc.pluck('Parliamentary_Constituency'));
 		const waitingListByArea = areaDim.group().reduceSum(dc.pluck('Housing_Stress_gtr_30'));
 			
-			dc.pieChart("#area_waiting_list")
-				.height(300)
-				.radius(200)
-				.innerRadius(30)
-				.transitionDuration(1000)
-				.dimension(areaDim)
-				.group(waitingListByArea)
-				.ordinalColors(["#805600", "#AB7200", "#FDAF13", "#FFC34A"])
-				/*use totalStress variable to calculate percentages*/
-				.label(function(d) {
-					return ("(" + d.key + ')') + " " + ((d.value / totalStress * 100).toFixed(0) + "%");
-				})	
+		dc.pieChart("#area_waiting_list")
+			.height(300)
+			.width(285)
+			.radius(200)
+			.innerRadius(30)
+			.transitionDuration(1000)
+			.dimension(areaDim)
+			.group(waitingListByArea)
+			.ordinalColors(["#805600", "#AB7200", "#FDAF13", "#FFC34A"])
+			/*use totalStress variable to calculate percentages*/
+			.label(function(d) {
+				return ("(" + d.key + ')') + " " + ((d.value / totalStress * 100).toFixed(0) + "%");
+		})	
 	}
 	
 	// Severe Waiting List by area (pie chart)
@@ -90,6 +91,7 @@ $(document).ready(function() {
 		
 		dc.pieChart('#severe_waiting_list')
 			.height(300)
+			.width(285)
 			.radius(200)
 			.innerRadius(30)
 			.transitionDuration(1000)
@@ -99,6 +101,6 @@ $(document).ready(function() {
 			/*use totalNeed variable to calculate percentages*/
 			.label(function(d) {
 				return ("(" + d.key + ')') + " " + ((d.value / totalNeed * 100).toFixed(0) + "%");
-			})	
+		})	
 	}
 });
