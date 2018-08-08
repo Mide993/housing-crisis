@@ -11,7 +11,9 @@ function getTotalStress(obj) {
         obj[i].Stress = +obj[i].Stress;
         arrayStress.push(obj[i].Stress);
     }
-    return stressTotal = arrayStress.reduce(reducer);
+    const stressTotal = arrayStress.reduce(reducer);
+    return stressTotal;
+    
 }
 
 
@@ -24,6 +26,7 @@ const getStressTotal = (data) => {
         arrayStress.push(data[i].Housing_Stress_gtr_30);
     }
     return totalStress = arrayStress.reduce(reducer);
+    
 }
 
 const getNeedTotal = (data) => {
@@ -39,10 +42,6 @@ const getNeedTotal = (data) => {
 // use d3.csv() method
 d3.csv("static/data/housingdata.csv", getStressTotal);
 d3.csv("static/data/housingdata.csv", getNeedTotal);
-
-
-// Testing
-// let myObj = [{PC: "West", Stress: 30}, {PC: "East", Stress: 60}]
 
 
 
