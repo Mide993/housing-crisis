@@ -13,7 +13,6 @@ function getTotalStress(obj) {
     }
     const stressTotal = arrayStress.reduce(reducer);
     return stressTotal;
-    
 }
 
 
@@ -26,7 +25,6 @@ const getStressTotal = (data) => {
         arrayStress.push(data[i].Housing_Stress_gtr_30);
     }
     return totalStress = arrayStress.reduce(reducer);
-    
 }
 
 const getNeedTotal = (data) => {
