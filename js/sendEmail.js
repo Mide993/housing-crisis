@@ -1,3 +1,4 @@
+// code from email.js for sending email from site
 function sendMail(contactForm) {
     emailjs.send("gmail", "housing_crisis_contact", {
         "from_name": contactForm.name.value,
@@ -5,6 +6,7 @@ function sendMail(contactForm) {
         "info_detail": contactForm.info_query.value
     })
     .then (
+        // alert methods called to indicate success/failure to send email
         function(response) {
             alert("Thank you for contacting the campaign. Hopefully we can work together!", response);
             
