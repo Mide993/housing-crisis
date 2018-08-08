@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// wait for the data to be fetched & formatted before makeGraphs function
+	// wait for the data to be parsed before makeGraphs function
 	queue()
 		.defer(d3.csv, "static/data/housingdata.csv")
 		.await(makeGraphs);
