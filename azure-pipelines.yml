@@ -19,5 +19,5 @@ steps:
   displayName: 'Run a multi-line script'
 - task: PublishBuildArtifacts@1
   inputs:
-    artifactName: 'war'
+    artifactName: drop'
     pathToPublish: '$(build.artifactStagingDirectory)'
